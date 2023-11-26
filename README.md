@@ -1,8 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Jisub%20Shim&fontSize=32)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=오픈소스소프트웨어&fontSize=32)
 
-Hello. I am Jisub, student in the [Dept. of Computer Science and Engineering](https://computer.seoultech.ac.kr/), [SEOULTECH](https://en.seoultech.ac.kr/).
+서울과학기술대학교 오픈소스소프트웨어 TODO LAB 입니다.
 
-* My e-mail address : jisub5322@naver.com
-* My Instagram ID : jisub5322
+파이썬을 이용하여 진행하였습니다.
 
 Thank you.:smile:

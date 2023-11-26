@@ -5,14 +5,15 @@ if __name__ == '__main__':
     midterm_range = np.array([0, 125])
     final_range = np.array([0, 100])
 
-    # Load score data
+    # Load score data0-1
     class_kr = np.loadtxt('data/class_score_kr.csv', delimiter=',')
     class_en = np.loadtxt('data/class_score_en.csv', delimiter=',')
     data = np.vstack((class_kr, class_en))
 
     # Estimate a line, final = slope * midterm + y_intercept
-    line = np.polyfit(data[:, 0], data[:, 1], 1) # TODO) Please find the best [slope, y_intercept] from 'data'
-
+    A = np.vstack((data[:, 0], np.ones(data[:, 0].shape))).T # TODO) Please find the best [slope, y_intercept] from 'data'
+    b= data[:, 1]
+    line = np.linalg.pinv(A)@b
     # Predict scores
     final = lambda midterm: line[0] * midterm + line[1]
     while True:
